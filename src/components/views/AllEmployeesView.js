@@ -9,7 +9,7 @@ const AllEmployeesView = (props) => {
   return (
     <div>
       {props.allEmployees.map((employee) => {
-        let name = employee.first + " " + employee.last;
+        let name = employee.firstname + " " + employee.lastname;
         return (
           <div key={employee.id}>
             <Link to={`/employee/${employee.id}`}>

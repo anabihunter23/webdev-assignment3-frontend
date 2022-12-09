@@ -64,54 +64,74 @@ class EditTaskContainer extends Component {
     }
 
     return (
-      <form
-        style={{ textAlign: "center" }}
-        onSubmit={(e) => this.handleSubmit(e)}
-      >
-        <label style={{ color: "#11153e", fontWeight: "bold" }}>
-          Description:{" "}
-        </label>
-        <input
-          type="text"
-          name="description"
-          value={this.state.description}
-          onChange={(e) => this.handleChange(e)}
-        />
-        <br />
+      <div className="formContainer">
+        <div className="formTitle">
+          <h2
+            style={{
+              fontWeight: "bold",
+              fontFamily: "Courier, sans-serif",
+              fontSize: "20px",
+              color: "#11153e",
+            }}
+          >
+            Edit Task
+          </h2>
+        </div>
+        <form
+          style={{ textAlign: "center" }}
+          onSubmit={(e) => this.handleSubmit(e)}
+        >
+          <label style={{ color: "#11153e", fontWeight: "bold" }}>
+            Description of Task:{" "}
+          </label>
+          <input
+            type="text"
+            name="description"
+            value={this.state.description}
+            onChange={(e) => this.handleChange(e)}
+          />
+          <br />
+          <br />
 
-        <label style={{ color: "#11153e", fontWeight: "bold" }}>
-          Priority:{" "}
-        </label>
-        <input
-          type="text"
-          name="priority"
-          value={this.state.priority}
-          onChange={(e) => this.handleChange(e)}
-        />
-        <br />
+          <label style={{ color: "#11153e", fontWeight: "bold" }}>
+            Priority Level:{" "}
+          </label>
+          <input
+            type="text"
+            name="priority"
+            value={this.state.priority}
+            onChange={(e) => this.handleChange(e)}
+          />
+          <br />
+          <br />
 
-        <label style={{ color: "#11153e", fontWeight: "bold" }}>Status: </label>
-        <input
-          type="text"
-          name="completion"
-          value={this.state.completion}
-          onChange={(e) => this.handleChange(e)}
-        />
-        <br />
+          <label style={{ color: "#11153e", fontWeight: "bold" }}>
+            Completion Status:{" "}
+          </label>
+          <input
+            type="text"
+            name="completion"
+            value={this.state.completion}
+            onChange={(e) => this.handleChange(e)}
+          />
+          <br />
+          <br />
 
-        <label style={{ color: "#11153e", fontWeight: "bold" }}>
-          employeeId:{" "}
-        </label>
-        <input
-          type="text"
-          name="employeeId"
-          value={this.state.employeeId}
-          onChange={(e) => this.handleChange(e)}
-        />
-        <br />
+          <label style={{ color: "#11153e", fontWeight: "bold" }}>
+            Employee ID:{" "}
+          </label>
+          <input
+            type="text"
+            name="employeeId"
+            value={this.state.employeeId}
+            onChange={(e) => this.handleChange(e)}
+          />
+          <br />
+          <br />
 
-        <button type="submit">Submit</button>
-      </form>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     );
   }
 }

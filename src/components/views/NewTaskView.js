@@ -4,7 +4,7 @@ const NewTaskView = (props) => {
   return (
     <div className="root">
       <div className="formContainer">
-        <div className="formDescription">
+        <div className="formTitle">
           <h2
             style={{
               fontWeight: "bold",
@@ -13,12 +13,12 @@ const NewTaskView = (props) => {
               color: "#11153e",
             }}
           >
-            New Task
+            Add a New Task
           </h2>
         </div>
         <form style={{ textAlign: "center" }} onSubmit={(e) => handleSubmit(e)}>
           <label style={{ color: "#11153e", fontWeight: "bold" }}>
-            Description:{" "}
+            Description of Task:{" "}
           </label>
           <input
             type="text"
@@ -29,7 +29,7 @@ const NewTaskView = (props) => {
           <br />
 
           <label style={{ color: "#11153e", fontWeight: "bold" }}>
-            Priority:{" "}
+            Priority Level:{" "}
           </label>
           <input
             type="text"
@@ -40,7 +40,7 @@ const NewTaskView = (props) => {
           <br />
 
           <label style={{ color: "#11153e", fontWeight: "bold" }}>
-            Completion:{" "}
+            Completion Status:{" "}
           </label>
           <input
             type="text"
@@ -51,7 +51,7 @@ const NewTaskView = (props) => {
           <br />
 
           <label style={{ color: "#11153e", fontWeight: "bold" }}>
-            employeeId:{" "}
+            Employee ID:{" "}
           </label>
           <input
             type="text"
