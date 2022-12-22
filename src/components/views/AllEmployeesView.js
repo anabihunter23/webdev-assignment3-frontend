@@ -5,14 +5,14 @@ const AllEmployeesView = (props) => {
   if (!props.allEmployees.length) {
     return (
       <div>
+        <br></br>
         <div>There are no employees.</div>
+        <br></br>
         <Link to={`/newemployee`}>
           <button>Add New Employee</button>
         </Link>
-        <br></br>
-        <br></br>
         <Link to={`/`}>
-          <button>Return Home</button>
+          <h5>Return Home</h5>
         </Link>
       </div>
     );
@@ -25,7 +25,7 @@ const AllEmployeesView = (props) => {
         return (
           <div key={employee.id}>
             <Link to={`/employee/${employee.id}`}>
-              <h1>{name}</h1>
+              <h2>{name}</h2>
             </Link>
             <p>{employee.department}</p>
             <button onClick={() => props.deleteEmployee(employee.id)}>
@@ -39,10 +39,8 @@ const AllEmployeesView = (props) => {
       <Link to={`/newemployee`}>
         <button>Add New Employee</button>
       </Link>
-      <br></br>
-      <br></br>
       <Link to={`/`}>
-        <button>Return Home</button>
+        <h5>Return Home</h5>
       </Link>
     </div>
   );
