@@ -2,6 +2,9 @@
 
 //All employees
 export const FETCH_ALL_EMPLOYEES = "FETCH_ALL_EMPLOYEES";
+export const ADD_EMPLOYEE = "ADD_EMPLOYEE";
+export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";
+export const EDIT_EMPLOYEE = "EDIT_EMPLOYEE";
 
 //Single employee
 export const FETCH_EMPLOYEE = "FETCH_EMPLOYEE";
