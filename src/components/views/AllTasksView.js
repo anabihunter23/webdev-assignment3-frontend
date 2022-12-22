@@ -10,10 +10,8 @@ const AllTasksView = (props) => {
         <Link to={`/newtask`}>
           <button>Add New Task</button>
         </Link>
-        <br></br>
-        <br></br>
         <Link to={`/`}>
-          <button>Return Home</button>
+          <h5>Return Home</h5>
         </Link>
       </div>
     );
@@ -26,7 +24,7 @@ const AllTasksView = (props) => {
         return (
           <div key={task.id}>
             <Link to={`/task/${task.id}`}>
-              <h1>{description}</h1>
+              <h2>{description}</h2>
             </Link>
             <button onClick={() => deleteTask(task.id)}>
               Delete This Task
@@ -39,10 +37,8 @@ const AllTasksView = (props) => {
       <Link to={`/newtask`}>
         <button>Add A New Task</button>
       </Link>
-      <br></br>
-      <br></br>
       <Link to={`/`}>
-        <button>Return Home</button>
+        <h5>Return Home</h5>
       </Link>
     </div>
   );
