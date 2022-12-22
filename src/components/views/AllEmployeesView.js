@@ -3,7 +3,17 @@ import { Link } from "react-router-dom";
 
 const AllEmployeesView = (props) => {
   if (!props.allEmployees.length) {
-    return <div>There are no employees.</div>;
+    return (
+      <div>
+        <div>There are no employees.</div>
+        <Link to={`/newemployee`}>
+          <button>Add New Employee</button>
+        </Link>
+        <Link to={`/`}>
+          <button>Return Home</button>
+        </Link>
+      </div>
+    );
   }
 
   return (
@@ -16,9 +26,18 @@ const AllEmployeesView = (props) => {
               <h1>{name}</h1>
             </Link>
             <p>{employee.department}</p>
+            <button onClick={() => props.deleteEmployee(employee.id)}>
+              Delete This Employee
+            </button>
           </div>
         );
       })}
+      <Link to={`/newemployee`}>
+        <button>Add New Employee</button>
+      </Link>
+      <Link to={`/`}>
+        <button>Return Home</button>
+      </Link>
     </div>
   );
 };
