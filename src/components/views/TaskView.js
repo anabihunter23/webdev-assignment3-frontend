@@ -10,7 +10,7 @@ const TaskView = (props) => {
           <h2>{task.employee.firstname + " " + task.employee.lastname}</h2>
         </Link>
       ) : (
-        <h3>employee</h3>
+        <h3>Unassigned</h3>
       )}
       <h4>
         Priority Level: {task.priority}, Status: {task.completion}
