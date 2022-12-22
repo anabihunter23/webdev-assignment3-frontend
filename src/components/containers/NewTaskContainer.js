@@ -15,6 +15,7 @@ class NewTaskContainer extends Component {
       employeeId: null,
       redirect: false,
       redirectId: null,
+      error: "",
     };
   }
 

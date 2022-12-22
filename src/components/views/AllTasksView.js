@@ -10,6 +10,8 @@ const AllTasksView = (props) => {
         <Link to={`/newtask`}>
           <button>Add New Task</button>
         </Link>
+        <br></br>
+        <br></br>
         <Link to={`/`}>
           <button>Return Home</button>
         </Link>
@@ -32,13 +34,13 @@ const AllTasksView = (props) => {
           </div>
         );
       })}
-
       <br></br>
       <br></br>
-
       <Link to={`/newtask`}>
         <button>Add A New Task</button>
       </Link>
+      <br></br>
+      <br></br>
       <Link to={`/`}>
         <button>Return Home</button>
       </Link>

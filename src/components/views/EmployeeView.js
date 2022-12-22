@@ -11,9 +11,11 @@ const EmployeeView = (props) => {
 
   return (
     <div>
-      <h1>{employee.firstname}'s Assigned Tasks</h1>
+      <h1>{employee.firstname}'s Information</h1>
       <h3>{employee.department}</h3>
-      <Link to={`/editemployee/${employee.id}`}>Edit employee information</Link>
+      <Link
+        to={`/editemployee/${employee.id}`}
+      >{`Edit ${employee.firstname}'s information`}</Link>
       <div
         style={{
           display: "flex",

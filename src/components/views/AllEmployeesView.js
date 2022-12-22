@@ -9,6 +9,8 @@ const AllEmployeesView = (props) => {
         <Link to={`/newemployee`}>
           <button>Add New Employee</button>
         </Link>
+        <br></br>
+        <br></br>
         <Link to={`/`}>
           <button>Return Home</button>
         </Link>
@@ -32,9 +34,13 @@ const AllEmployeesView = (props) => {
           </div>
         );
       })}
+      <br></br>
+      <br></br>
       <Link to={`/newemployee`}>
         <button>Add New Employee</button>
       </Link>
+      <br></br>
+      <br></br>
       <Link to={`/`}>
         <button>Return Home</button>
       </Link>
